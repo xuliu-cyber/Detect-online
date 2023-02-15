@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="static/css/main.css">
+    </head>
+    <body id="body">
+        <form action="#">
+            <label for="lang">Class</label>
+            <select id="select_classes">
+              <option value="plane">plane</option>
+              <option value="baseball-diamond">baseball-diamond</option>
+              <option value="bridge">bridge</option>
+              <option value="ground-track-field">ground-track-field</option>
+              <option value="small-vehicle">small-vehicle</option>
+              <option value="large-vehicle">large-vehicle</option>
+              <option value="ship">ship</option>
+              <option value="tennis-court">tennis-court</option>
+              <option value="basketball-court">basketball-court</option>
+              <option value="storage-tank">storage-tank</option>
+              <option value="soccer-ball-field">soccer-ball-field</option>
+              <option value="roundabout">roundabout</option>
+              <option value="harbor">harbor</option>
+              <option value="swimming-pool">swimming-pool</option>
+              <option value="helicopter">helicopter</option>
+              <option value="container-crane">container-crane</option>
+              <option value="airport">airport</option>
+              <option value="helipad">helipad</option>
+            </select>
+
+            <label for="lang">Model</label>
+            <select id="select_models">
+              <option value="ppyoloer">ppyoloer</option>
+              <option value="ori_reppoints">ori_reppoints</option>
+              <option value="cutler_clip">cutler_clip</option>
+            </select>
+            <input id="confidence" type="text" placeholder="confidence"></input>
+            <button type="button" id="Search">Search</button>
+        </form>
+        
+        <!--  -->
+        <canvas id="myCanvas" width="1080" height="1080" style="border:1px solid #d3d3d3;">
+        这是浏览器不支持canvas时展示的信息
+        </canvas>
+        <img src="static/pictures/5120.png" style="display:none;"></img>
+        
+    </body>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <!--引入jQuery包用于使用ajax-->
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+</html>
